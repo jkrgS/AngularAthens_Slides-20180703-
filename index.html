@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Angular Athens #2</title>
+
+		<meta name="description" content="Angular Athens #2 Presentation for Angular introduction-Angular CLI (20180703)">
+		<meta name="author" content="George Sisko">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- custom css file -->
+		<link rel="stylesheet" href="css/main.css">
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- font-awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+					<!-- Slide #1 // Introduction Page -->
+				<section>
+					<img class="aaimg" src="./assets/pics/angularathens.png" alt="AA">
+					<h1>Hello World!</h1>
+					<p>"Introduction in Angular & Angular CLI"</p>
+				</section>
+					<!-- Slide #2 // Introduce myself -->
+				<section>
+					<div class="floating" style="height: 100px; width: 100px;">
+						<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+					</div>
+
+					<img class="my-img" src="./assets/pics/DqbHXAlX_400x400.jpg" alt="DqbHXAlX_400x400.jpg">
+					<p style="line-height: 5px">
+						George Sisko[Jkr]
+					</p>
+						<p style="font-size: 18px">Full Stack Web Developer @Intrasoft International</p>
+						<br>
+
+					<ul class="list" style="padding-left: 100px">
+						<li >
+							<a href="https://socialhackersacademy.org/" target="_blank"> SHA</a> Addicted [Introduce people to the World of Coding]
+						</li>
+						<li>
+							Amateur Music Producer [Techno]
+						</li>
+						<li>
+							Skateboard / Snowboard Lover
+						</li>
+						<li >
+							Animals Lover [Friends & Neighbors]
+						</li>
+					</ul>
+						<br> <br>
+					<a href="https://github.com/jkrgS?tab=repositories" target="_blank" style="color: white"><i class="fa fa-github" style="font-size:33px"><span style="font-size: 18px">  /jkrgS</span></i></a>  
+					<a href="https://www.linkedin.com/in/gsisko/" target="_blank" style="color: white"><i class="fa fa-linkedin-square" style="font-size:33px"><span style="font-size: 18px">  /gsisko</span></i></a> 
+					<a href="https://twitter.com/GeorgeJkrr" target="_blank" style="color: white"><i class="fa fa-twitter-square" style="font-size: 33px"><span style="font-size: 18px">  /GeorgeJkrr</span></i></a> 
+				</section>
+					<!-- Slide #3 Sneak peak of presentation -->
+				<section>
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<img src="./assets/pics/AngularCLI.png" class="aaimg" alt="AngularCLI.png">
+						<p>
+							The AngularCLI makes it easy to create an application that works and follows best practices!
+						</p>
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<ul class="list">
+							<li >
+								Install Angular CLI(Command Line Interface)
+							</li>
+							<li>
+								Creating new application
+							</li>
+							<li>
+								Generating code from blueprints
+							</li>
+							<li >
+								linting the code
+							</li>
+							<li >
+								Building an optimized app
+							</li>
+							<li >
+								Testing
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<img src="./assets/pics/AngularCLI_pic.png" class="aaimg" style="width: 690px !important; height: 400px !important;" alt="AngularCLI_pic.png">
+						<p>
+							When the tooling handles the process, Developers can focus on the users needs!
+						</p>
+					</section>
+
+				</section>
+					<!-- Slide #4 Requirements -->
+				<section>
+					<div class="floating" style="height: 100px; width: 100px;">
+						<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+					</div>
+
+					<h3>
+						Requirements
+					</h3>
+
+					<img src="./assets/pics/Requirements.png" alt="Requirements.png">
+				</section>
+					<!-- Slide #5 // Installing the Angular CLI -->
+				<section>
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Installing the Angular CLI
+						</h3>
+
+						<img src="./assets/pics/nmpInstall.png" alt="nmpInstall.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Verifying Angular CLI Version
+						</h3>
+
+						<img src="./assets/pics/verifyingNGVersion.png" alt="verifyingNGVersion.png">
+					</section>
+				</section>
+					<!-- Slide #6 // Generating & Verifying a New Application -->
+				<section>
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<div style="height: 100px; width: 150px; position: fixed; right: 0px; top: 0px">
+								<span><i class="fa fa-lightbulb-o" style="font-size:36px"></i></i></span> 
+								<img src="./assets/pics/helpFlag.png"  alt="helpFlag.png">
+						</div>
+							<br>
+
+						<h3>
+							Generating & Verifying a New Application
+						</h3>
+
+						<img src="./assets/pics/generatingVerifyingNewApp.png" alt="generatingVerifyingNewApp.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Generation Flags
+						</h3>
+
+						<img src="./assets/pics/commonAppGenerationFiles.png" alt="commonAppGenerationFiles.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Setting Angular CLI's Configuration
+						</h3>
+							<br>
+
+						<p style="font-size: 23px">
+							<i class="fa fa-warning" style="font-size:36px"></i>
+							The <strong style="color: firebrick">--global</strong> (or <strong style="color: firebrick">-g</strong> ) flag sets your global .angular.json file
+						</p>
+
+						<img src="./assets/pics/settingAngularCLIConfig.png" alt="settingAngularCLIConfig.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+								<span><i class="fa fa-lightbulb-o" style="font-size:36px"> Tip</i></i></span> 
+						</h3>
+
+						<img src="./assets/pics/Tip_1.png" alt="Tip_1.png">
+					</section>
+				</section>
+				<!-- Slide #7 // Blueprints -->
+				<section>
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+	
+						<h3>
+							Blueprints
+						</h3>
+						<img class="aaimg" style="width: 500px !important" src="./assets/pics/blueprints.jpg" alt="blueprints.jpg">
+	
+						<ul>
+							<li>
+								The Angular CLI generates from blueprints
+							</li>
+							<li>
+								Blueprints define the file(s)
+							</li>
+							<li>
+								We indicate a name and options
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<div style="height: 130px; width: 160px; position: fixed; right: 0px; top: 0px">
+							<span><i class="fa fa-lightbulb-o" style="font-size:36px"></i></i></span> 
+							<img src="./assets/pics/dry-run.png"  alt="helpFlag.png">
+						</div>
+
+						<h3>
+							Syntax
+						</h3>
+							<span><i class="fa fa-code">  ng generate < blueprint > < options > </i></span>
+
+						<img src="./assets/pics/ngGenerateBlueprints.png" alt="ngGenerateBlueprints.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							<span><i class="fa fa-lightbulb-o" style="font-size:36px"> Tip</i></i></span> 
+						</h3>
+
+						<p>
+							Shortcuts
+						</p>
+
+						<img src="./assets/pics/ng-generateAliases.png" alt="ng-generateAliases.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Commonly Used Commands
+						</h3>
+
+						<img src="./assets/pics/ng-generateCommonlyUsed.png" alt="ng-generateCommonlyUsed.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							More Blueprints
+						</h3>
+
+						<img src="./assets/pics/moreBlueprints.png" alt="moreBlueprints.png">
+					</section>
+					
+				</section>
+
+				<section>
+					<div class="floating" style="height: 100px; width: 100px;">
+						<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+					</div>
+
+					<h3>
+						Linting
+					</h3>
+
+					<img src="./assets/pics/linting.png" alt="linting.png">
+				</section>
+
+				<section>
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Building & Serving
+						</h3>
+
+						<img src="./assets/pics/ng-build-dev.png" alt="ng-build-dev.png">
+						<img src="./assets/pics/ng-build-prod.png" alt="ng-build-prod.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Exploring Build Bundles
+						</h3>
+
+						<img src="./assets/pics/buildBundles.png" alt="comparingBuildTargets.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Comparing Building Targets
+						</h3>
+
+						<img src="./assets/pics/comparingBuildTargets.png" alt="comparingBuildTargets.png">
+					</section>
+
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<div style="height: 130px; width: 160px; position: fixed; right: 0px; top: 0px">
+							<span><i class="fa fa-lightbulb-o" style="font-size:36px"></i></i></span> 
+							<img src="./assets/pics/ng-serve-tip.png"  alt="ng-serve-tip.png">
+						</div>
+
+						<h3>
+							Common <i class="fa fa-code"></i> <strong style="color: orangered">ng serve</strong> Options
+						</h3>
+
+						<img src="./assets/pics/ng-serve-options.png" alt="ng-serve-options.png">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Unit Testing
+						</h3>
+
+						<img src="./assets/pics/ng-test.png" alt="ng-test.png">
+
+						<ul>
+							<li>
+								Test discrete functionality
+							</li>
+							<li>
+								Isolate the feature under test
+							</li>
+							<li>
+								Valuable part of the dev & CI Lifecycles
+							</li>
+						</ul>
+					</section>
+						
+					<section>
+						<div class="floating" style="height: 100px; width: 100px;">
+							<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+						</div>
+
+						<h3>
+							Common <i class="fa fa-code"></i> <strong style="color: orangered">ng test</strong> Options
+						</h3>
+
+						<img src="./assets/pics/common-ng-test-options.png" alt="common-ng-test-options.png">
+					</section>
+				</section>
+
+				<section>
+					<div class="floating" style="height: 100px; width: 100px;">
+						<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+					</div>
+
+					<h3>
+						Improve & Develope the App
+					</h3>
+						<br>
+
+					<a href="https://github.com/jkrgS/Airports-Angular" target="_blank" style="color: white"><i class="fa fa-github" style="font-size:48px"><span style="font-size: 33px">  Airports-Angular Application</span></i></a>
+					<p style="font-size: 28px">/jkrgS/Airports-Angular</p>
+				</section>
+
+				<section>
+					<div class="floating" style="height: 100px; width: 100px;">
+						<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+					</div>
+
+					<h3>
+						Sources
+					</h3>
+
+					<ul style="font-size: 28px">
+						<li>
+							SHA = Social Hackers Academy [<a href="https://socialhackersacademy.org/" target="_blank">https://socialhackersacademy.org/</a>]
+						</li>
+						<li>
+							Installing Angular CLI [<a href="https://cli.angular.io/" target="_blank">https://cli.angular.io/</a>]
+						</li>
+						<li>
+							Creating new application [<a href="https://cli.angular.io/" target="_blank">https://cli.angular.io/</a>]
+						</li>
+						<li>
+							Generating code from blueprints [<a href="https://github.com/angular/angular-cli/wiki/generate-component" target="_blank">https://github.com/angular/angular-cli/wiki/generate-component</a>]
+						</li>
+						<li>
+							Linting the code [<a href="https://github.com/angular/angular-cli/wiki/lint" target="_blank">https://github.com/angular/angular-cli/wiki/lint</a>]
+						</li>
+						<li>
+							Building and optimized app [<a href="https://github.com/angular/angular-cli/wiki/build" target="_blank">https://github.com/angular/angular-cli/wiki/build</a>]
+						</li>
+						<li>
+							Testing [<a href="https://github.com/angular/angular-cli/wiki/test" target="_blank">https://github.com/angular/angular-cli/wiki/test</a>]
+						</li>
+						<li>
+							Pluralsight - Angular CLI {John Papa} [<a href="https://www.pluralsight.com/courses/angular-cli" target="_blank">https://www.pluralsight.com/courses/angular-cli</a>]
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<div class="floating" style="height: 100px; width: 100px;">
+						<img class="aaimgNav" src="./assets/pics/angularathens.png" alt="AA">
+					</div>
+
+					<h3>Quote</h3>
+						<br>
+
+					<p>
+						<strong>Buddha: </strong> You, yourself, as much as anybody in the entire universe, deserve your love and affection.
+					</p>
+				</section>
+
+				<section>
+					<img class="aaimg" src="./assets/pics/angularathens.png" alt="AA">
+					<p><strong>Thank you for listening!</strong></p>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>

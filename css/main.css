@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(2, 39, 46)
+}
+
+img.aaimg {
+    height: 300px;
+    width: 300px;
+    border: 0px !important;
+    background: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.aaimgNav {
+    height: 400px;
+    width: 400px;
+    border: 0px !important;
+    background: 0 !important;
+    box-shadow: 0 0 0 0 !important;
+    opacity: 0.4;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    68%  { transform: translate(0, 30px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.my-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.list {
+    font-size: 26px !important;
+    list-style-position: inside;
+}
+
+/* code {
+    width: 150px;
+    height: 150px;
+} */
+
+  
